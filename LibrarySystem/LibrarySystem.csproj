@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4DBAD4B2-DC4B-46E3-B0A9-05EEF468FFA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LibrarySystem</RootNamespace>
+    <AssemblyName>LibrarySystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addbooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addbooks.Designer.cs">
+      <DependentUpon>Addbooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addstudent.Designer.cs">
+      <DependentUpon>Addstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issuebooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issuebooks.Designer.cs">
+      <DependentUpon>Issuebooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssuebooksRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssuebooksRP.Designer.cs">
+      <DependentUpon>IssuebooksRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Returnbooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Returnbooks.Designer.cs">
+      <DependentUpon>Returnbooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnbooksRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnbooksRP.Designer.cs">
+      <DependentUpon>ReturnbooksRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewbooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewbooks.Designer.cs">
+      <DependentUpon>Viewbooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewstudent.Designer.cs">
+      <DependentUpon>Viewstudent.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addbooks.resx">
+      <DependentUpon>Addbooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addstudent.resx">
+      <DependentUpon>Addstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issuebooks.resx">
+      <DependentUpon>Issuebooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssuebooksRP.resx">
+      <DependentUpon>IssuebooksRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Returnbooks.resx">
+      <DependentUpon>Returnbooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnbooksRP.resx">
+      <DependentUpon>ReturnbooksRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewbooks.resx">
+      <DependentUpon>Viewbooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewstudent.resx">
+      <DependentUpon>Viewstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-hand-drawn-magic-book-png-image_7145119.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %285%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-book-flat-modern-icon-design-vector-30109817.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %286%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-graduate-student-icon-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %287%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %288%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %289%29.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
